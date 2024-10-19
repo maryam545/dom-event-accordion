@@ -1,0 +1,14 @@
+.accordion {
+  padding: 20px 50px;
+}
+.accordion-content {
+  display: none;
+  background-color: darkslategrey;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.accordion h3 {
+  cursor: pointer;
+}
