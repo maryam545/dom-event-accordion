@@ -1,11 +1,11 @@
 const accordion = document.querySelector(".accordion");
 accordion.addEventListener("click", function (e) {
   if (e.target.tagName === "H3") {
-    const content = e.target.parentNode.querySelector(".accordion-content");
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
+    const contents = document.querySelectorAll(".accordion-content");
+    contents.forEach((contents) => {
+      contents.style.display = "none";
+    });
+    const content = e.target.nextElementSibling;
+    content.style.display = "block";
   }
 });
